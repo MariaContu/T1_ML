@@ -1,4 +1,5 @@
-from src.preprocessing import (
+from models import train_and_evaluate
+from preprocessing import (
     load_data,
     apply_undersampling,
     check_distribution,
@@ -32,6 +33,8 @@ def main():
 
     print("\nShape treino:", X_train.shape)
     print("Shape teste:", X_test.shape)
+
+    trained = train_and_evaluate(X_train, X_test, y_train, y_test)
 
 
 if __name__ == "__main__":

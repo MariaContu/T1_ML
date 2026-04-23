@@ -66,7 +66,8 @@ def encode_categorical(X: pd.DataFrame):
 def normalize_data(X: pd.DataFrame):
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
-    return X_scaled
+    #retorna com os nomes das colunas para usar na arvore de decisao
+    return pd.DataFrame(X_scaled, columns=X.columns, index=X.index)
 
 def split_train_test(X, y):
     return train_test_split(
