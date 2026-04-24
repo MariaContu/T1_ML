@@ -51,19 +51,19 @@
 
 ## 🤖 6. Treinamento dos Modelos
 
-- [ ] Treinamento do KNN  
-- [ ] Treinamento do Naïve Bayes  
-- [ ] Treinamento da Árvore de Decisão  
-- [ ] Ajuste de hiperparâmetros (se aplicável)  
+- [x] Treinamento do KNN  
+- [x] Treinamento do Naïve Bayes  
+- [x] Treinamento da Árvore de Decisão  
+- [x] Ajuste de hiperparâmetros (se aplicável)  
 
 ---
 
 ## 📊 7. Avaliação dos Modelos
 
-- [ ] Cálculo da acurácia  
-- [ ] Cálculo da precisão  
-- [ ] Cálculo do recall  
-- [ ] Cálculo do F1-score  
+- [x] Cálculo da acurácia  
+- [x] Cálculo da precisão  
+- [x] Cálculo do recall  
+- [x] Cálculo do F1-score  
 - [ ] Geração da matriz de confusão  
 - [ ] Justificativa das métricas escolhidas  
 
