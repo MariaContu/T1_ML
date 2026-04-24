@@ -7,11 +7,14 @@ from preprocessing import (
     split_features_target,
     encode_categorical,
     normalize_data,
-    split_train_test
+    split_train_test,
+    handle_missing_values
 )
 
 def main():
-    df = load_data("data/online_shoppers_intention.csv")
+    df = load_data("src/data/online_shoppers_intention.csv")
+
+    df = handle_missing_values(df)
 
     basic_eda(df)
 

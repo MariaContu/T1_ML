@@ -64,7 +64,7 @@
 - [x] Cálculo da precisão  
 - [x] Cálculo do recall  
 - [x] Cálculo do F1-score  
-- [ ] Geração da matriz de confusão  
+- [x] Geração da matriz de confusão  
 - [ ] Justificativa das métricas escolhidas  
 
 ---

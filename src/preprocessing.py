@@ -48,9 +48,6 @@ def basic_eda(df: pd.DataFrame):
     print("\n=== ESTATÍSTICAS ===")
     print(df.describe())
 
-    print("\n=== VALORES NULOS ===")
-    print(df.isnull().sum())
-
     print("\n=== TIPOS DE DADOS ===")
     print(df.dtypes)
 
@@ -75,3 +72,21 @@ def split_train_test(X, y):
         test_size=0.2,
         random_state=42
     )
+
+def handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Trata valores nulos:
+    - Numéricos → média
+    - Categóricos → moda
+    """
+
+    df = df.copy()
+
+    for col in df.columns:
+        if df[col].isnull().sum() > 0:
+            if df[col].dtype in ['int64', 'float64']:
+                df[col].fillna(df[col].mean(), inplace=True)
+            else:
+                df[col].fillna(df[col].mode()[0], inplace=True)
+
+    return df
