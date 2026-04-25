@@ -72,15 +72,15 @@
 ## 🔍 8. Interpretabilidade
 
 ### 🌳 Árvore de Decisão
-- [ ] Visualização da árvore  
-- [ ] Análise das features mais importantes  
+- [x] Visualização da árvore  
+- [x] Análise das features mais importantes  
 
 ### 📈 Naïve Bayes
-- [ ] Análise das probabilidades condicionais  
+- [x] Análise das probabilidades condicionais  
 
 ### 👥 KNN
-- [ ] Discussão da dificuldade de interpretabilidade  
-- [ ] Aplicação de SHAP ou LIME  
+- [x] Discussão da dificuldade de interpretabilidade  
+- [x] Aplicação de SHAP ou LIME  
 
 ---
 

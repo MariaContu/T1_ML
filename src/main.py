@@ -1,3 +1,4 @@
+from interpretability import run_interpretability
 from models import train_and_evaluate
 from preprocessing import (
     load_data,
@@ -8,7 +9,7 @@ from preprocessing import (
     encode_categorical,
     normalize_data,
     split_train_test,
-    handle_missing_values
+    handle_missing_values,
 )
 
 def main():
@@ -38,6 +39,8 @@ def main():
     print("Shape teste:", X_test.shape)
 
     trained = train_and_evaluate(X_train, X_test, y_train, y_test)
+
+    run_interpretability(trained, X_train, X_test, y_test, "src/results")
 
 
 if __name__ == "__main__":
